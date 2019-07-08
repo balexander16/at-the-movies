@@ -10,4 +10,7 @@ public interface ActorRepository extends CrudRepository<Actor, UUID> {
 
   List<Actor> getAllByOrderByName();
 
+  List<Actor> getAllByNameContainsOrderByNameAsc(String nameFragment);
+
+
 }
